@@ -25,6 +25,13 @@ div
     border-radius: 0.5em;
 }
 
+.card .info {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
 .card .dice{
     background-color: white;
 }
@@ -39,13 +46,15 @@ div
     color: white;
     display: flex;
     flex-direction: row;
+    margin-right: 1em;
 }
 
 .card .difficulty-dot {
     border-radius: 50%;
     background-color: white;
-    width: 10px;
-    height: 10px;
+    width: 0.8em;
+    height: 0.8em;
+    margin: 0.1em;
 }
 
 .dice {
