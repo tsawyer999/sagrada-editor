@@ -19,11 +19,11 @@ div
 }
 
 .dice {
-    border: 0.0234375em solid black;
-    width: 4.6875em;
-    height: 4.6875em;
-    margin: 0.234375em;
-    border-radius: 0.234375em;
+    border: 0.1em solid black;
+    width: 4.7em;
+    height: 4.7em;
+    margin: 0.2em;
+    border-radius: 0.2em;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -54,12 +54,12 @@ div
     width: 100%;
     height: 100%;
     background: #aaaaaa;
-    border: 0.046875em solid black;
+    border: 0.1em solid black;
     position: absolute;
     display: flex;
     align-items: center;
     justify-content: center;
-    border-radius: 0.3515625em;
+    border-radius: 0.4em;
 }
 
 .side {
@@ -75,36 +75,36 @@ div
 .two {
     &:before {
         background: transparent;
-        box-shadow: #000000 -1.171875em -1.171875em 0 0, #000000 1.171875em 1.171875em 0 0;
+        box-shadow: #000000 -1.2em -1.2em 0 0, #000000 1.2em 1.2em 0 0;
     }
 }
 
 .three {
     &:before {
-        box-shadow: #000000 -1.171875em 1.171875em 0 0, #000000 1.171875em -1.171875em 0 0;
+        box-shadow: #000000 -1.2em 1.2em 0 0, #000000 1.2em -1.2em 0 0;
     }
 }
 
 .four {
     &:before {
         background: transparent;
-        box-shadow: #000000 -1.171875em 1.171875em 0 0, #000000 -1.171875em -1.171875em 0 0,
-        #000000 1.171875em 1.171875em 0 0, #000000 1.171875em -1.171875em 0 0;
+        box-shadow: #000000 -1.2em 1.2em 0 0, #000000 -1.2em -1.2em 0 0,
+        #000000 1.2em 1.2em 0 0, #000000 1.2em -1.2em 0 0;
     }
 }
 
 .five {
     &:before {
-        box-shadow: #000000 -1.171875em -1.171875em 0 0, #000000 -1.171875em 1.171875em 0 0,
-        #000000 1.171875em -1.171875em 0 0, #000000 1.171875em 1.171875em 0 0;
+        box-shadow: #000000 -1.2em -1.2em 0 0, #000000 -1.2em 1.2em 0 0,
+        #000000 1.2em -1.2em 0 0, #000000 1.2em 1.2em 0 0;
     }
 }
 
 .six {
     &:before {
         background: transparent;
-        box-shadow: #000000 -1.171875em -1.171875em 0 0, #000 -1.171875em 0 0 0,
-        #000000 -1.171875em 1.171875em 0 0, #000 1.171875em -1.171875em 0 0, #000 1.171875em 0 0 0, #000000
-        1.171875em 1.171875em 0 0;
+        box-shadow: #000000 -1.2em -1.2em 0 0, #000 -1.2em 0 0 0,
+        #000000 -1.2em 1.2em 0 0, #000 1.2em -1.2em 0 0, #000 1.2em 0 0 0, #000000
+        1.2em 1.2em 0 0;
     }
 }
