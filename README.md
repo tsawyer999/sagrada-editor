@@ -1,4 +1,4 @@
-# Math Grid
+# Sagrada Editor
 
 A web application for math grid exercises.
 

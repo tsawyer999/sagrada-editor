@@ -1,8 +1,4 @@
 {
-  "app_title": "Math Grid",
-  "grid_size": "Grid Size:",
-  "addition": "Addition",
-  "multiplication": "Multiplication",
-  "timer_text": "{{minutes}} minutes {{seconds}} seconds - {{correct}} correct answers",
+  "app_title": "Sagrada Editor",
   "footer": "Hollox©2026"
 }
