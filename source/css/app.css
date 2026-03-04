@@ -1,10 +1,10 @@
 div
 {
-    border: 0px solid black;
+    border: 0 solid black;
 }
 
 .title {
-    font-size: 24px;
+    font-size: 1.5em;
     font-weight: bold;
 }
 
@@ -19,11 +19,11 @@ div
 }
 
 .dice {
-    border: 1px solid black;
-    width: 200px;
-    height: 200px;
-    margin: 10px;
-    border-radius: 10px;
+    border: 0.0234375em solid black;
+    width: 4.6875em;
+    height: 4.6875em;
+    margin: 0.234375em;
+    border-radius: 0.234375em;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -54,12 +54,12 @@ div
     width: 100%;
     height: 100%;
     background: #aaaaaa;
-    border: 2px solid black;
+    border: 0.046875em solid black;
     position: absolute;
     display: flex;
     align-items: center;
     justify-content: center;
-    border-radius: 15px;
+    border-radius: 0.3515625em;
 }
 
 .side {
@@ -75,36 +75,36 @@ div
 .two {
     &:before {
         background: transparent;
-        box-shadow: #000000 -50px -50px 0px 0px, #000000 50px 50px 0px 0px;
+        box-shadow: #000000 -1.171875em -1.171875em 0 0, #000000 1.171875em 1.171875em 0 0;
     }
 }
 
 .three {
     &:before {
-        box-shadow: #000000 -50px 50px 0px 0px, #000000 50px -50px 0px 0px;
+        box-shadow: #000000 -1.171875em 1.171875em 0 0, #000000 1.171875em -1.171875em 0 0;
     }
 }
 
 .four {
     &:before {
         background: transparent;
-        box-shadow: #000000 -50px 50px 0px 0px, #000000 -50px -50px 0px 0px,
-        #000000 50px 50px 0px 0px, #000000 50px -50px 0px 0px;
+        box-shadow: #000000 -1.171875em 1.171875em 0 0, #000000 -1.171875em -1.171875em 0 0,
+        #000000 1.171875em 1.171875em 0 0, #000000 1.171875em -1.171875em 0 0;
     }
 }
 
 .five {
     &:before {
-        box-shadow: #000000 -50px -50px 0px 0px, #000000 -50px 50px 0px 0px,
-        #000000 50px -50px 0px 0px, #000000 50px 50px 0px 0px;
+        box-shadow: #000000 -1.171875em -1.171875em 0 0, #000000 -1.171875em 1.171875em 0 0,
+        #000000 1.171875em -1.171875em 0 0, #000000 1.171875em 1.171875em 0 0;
     }
 }
 
 .six {
     &:before {
         background: transparent;
-        box-shadow: #000000 -50px -50px 0px 0px, #000 -50px 0px 0px 0px,
-        #000000 -50px 50px 0px 0px, #000 50px -50px 0px 0px, #000 50px 0px 0px 0px, #000000
-        50px 50px 0px 0px;
+        box-shadow: #000000 -1.171875em -1.171875em 0 0, #000 -1.171875em 0 0 0,
+        #000000 -1.171875em 1.171875em 0 0, #000 1.171875em -1.171875em 0 0, #000 1.171875em 0 0 0, #000000
+        1.171875em 1.171875em 0 0;
     }
 }
