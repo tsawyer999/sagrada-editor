@@ -1,0 +1,28 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: sagrada-editor
+  labels:
+    app: sagrada-editor
+spec:
+  replicas: 2
+  selector:
+    matchLabels:
+      app: sagrada-editor
+  template:
+    metadata:
+      labels:
+        app: sagrada-editor
+    spec:
+      containers:
+      - name: sagrada-editor
+        image: your-dockerhub-username/sagrada-editor:latest
+        ports:
+        - containerPort: 80
+        resources:
+          requests:
+            memory: "64Mi"
+            cpu: "100m"
+          limits:
+            memory: "128Mi"
+            cpu: "200m"
