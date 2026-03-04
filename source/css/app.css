@@ -18,6 +18,35 @@ div
     flex-direction: column;
 }
 
+.card {
+    background-color: black;
+    justify-content: center;
+}
+
+.card .dice{
+    background-color: white;
+}
+
+.card .title {
+    color: white;
+    margin-left: 25%;
+    text-transform: capitalize;
+}
+
+.card .difficulty {
+    color: white;
+    display: flex;
+    flex-direction: row;
+    position: absolute;
+}
+
+.card .difficulty-dot {
+    border-radius: 50%;
+    background-color: white;
+    width: 10px;
+    height: 10px;
+}
+
 .dice {
     border: 0.1em solid black;
     width: 4.7em;
