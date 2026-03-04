@@ -12,3 +12,13 @@ div
     display: flex;
     flex-direction: column;
 }
+
+.dice {
+    width: 75px;
+    height: 75px;
+    border-radius: 10px;
+    margin: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
