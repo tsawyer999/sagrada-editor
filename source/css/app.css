@@ -1,5 +1,4 @@
-div
-{
+div {
     border: 0 solid black;
 }
 
@@ -32,7 +31,7 @@ div
     align-items: center;
 }
 
-.card .dice{
+.card .dice {
 }
 
 .card .title {
@@ -107,51 +106,69 @@ div
     align-items: center;
     justify-content: center;
     border-radius: 0.4em;
-}
 
-.face {
     &:before {
         content: '';
         width: 20%;
         height: 20%;
-        background: black;
         border-radius: 50%;
+    }
+}
+
+.face-one {
+    &:before {
+        background: black;
     }
 }
 
 .face-two {
     &:before {
         background: transparent;
-        box-shadow: #000000 -1.2em -1.2em 0 0, #000000 1.2em 1.2em 0 0;
+        box-shadow: #000000 -1.2em -1.2em 0 0,
+        #000000 1.2em 1.2em 0 0;
     }
 }
 
 .face-three {
     &:before {
-        box-shadow: #000000 -1.2em 1.2em 0 0, #000000 1.2em -1.2em 0 0;
+        background: black;
+        box-shadow: #000000 -1.2em 1.2em 0 0,
+        #000000 1.2em -1.2em 0 0;
     }
 }
 
 .face-four {
     &:before {
         background: transparent;
-        box-shadow: #000000 -1.2em 1.2em 0 0, #000000 -1.2em -1.2em 0 0,
-        #000000 1.2em 1.2em 0 0, #000000 1.2em -1.2em 0 0;
+        box-shadow: #000000 -1.2em 1.2em 0 0,
+        #000000 -1.2em -1.2em 0 0,
+        #000000 1.2em 1.2em 0 0,
+        #000000 1.2em -1.2em 0 0;
     }
 }
 
 .face-five {
     &:before {
-        box-shadow: #000000 -1.2em -1.2em 0 0, #000000 -1.2em 1.2em 0 0,
-        #000000 1.2em -1.2em 0 0, #000000 1.2em 1.2em 0 0;
+        content: '';
+        width: 20%;
+        height: 20%;
+        background: black;
+        border-radius: 50%;
+        box-shadow: #000000 -1.2em -1.2em 0 0,
+        #000000 -1.2em 1.2em 0 0,
+        #000000 1.2em -1.2em 0 0,
+        #000000 1.2em 1.2em 0 0;
     }
 }
 
 .face-six {
     &:before {
         background: transparent;
-        box-shadow: #000000 -1.2em -1.2em 0 0, #000 -1.2em 0 0 0,
-        #000000 -1.2em 1.2em 0 0, #000 1.2em -1.2em 0 0, #000 1.2em 0 0 0, #000000
-        1.2em 1.2em 0 0;
+        box-shadow: #000000 -1.2em -1.2em 0 0,
+        #000000 -1.2em 0 0 0,
+        #000000 -1.2em 1.2em 0 0,
+        #000000 1.2em -1.2em 0 0,
+        #000000 1.2em 0 0 0,
+        #000000 1.2em 1.2em 0 0;
     }
 }
