@@ -1,18 +1,74 @@
 document.addEventListener("DOMContentLoaded", () => {
   makeColorDiceDraggable();
-  makeWhiteDiceAcceptDrops();
+  makeBlankDiceAcceptDrops();
+
+  makeNumberFaceDraggable();
+  makeBlankFaceAcceptDrops();
 });
 
-function makeColorDiceDraggable() {
-  const colorDice = document.querySelectorAll(
-    ".dice-red, .dice-yellow, .dice-green, .dice-blue, .dice-purple",
-  );
+function makeNumberFaceDraggable() {
+  const faces = document.querySelectorAll(".face-number-container .face");
 
-  colorDice.forEach((dice) => {
+  for (const face of faces) {
+    face.setAttribute("draggable", "true");
+
+    face.addEventListener("dragstart", (e) => {
+      const numberClass = Array.from(face.classList).find((cls) =>
+        cls.startsWith("face-"),
+      );
+
+      e.dataTransfer.setData("text/plain", numberClass);
+      face.style.opacity = "0.5";
+    });
+
+    face.addEventListener("dragend", (e) => {
+      face.style.opacity = "1";
+    });
+  }
+}
+
+function makeBlankFaceAcceptDrops() {
+  const faces = document.querySelectorAll(".card .face");
+
+  for (const face of faces) {
+    face.addEventListener("dragover", (e) => {
+      e.preventDefault();
+      face.style.opacity = "0.7";
+    });
+
+    face.addEventListener("dragleave", (e) => {
+      face.style.opacity = "1";
+    });
+
+    face.addEventListener("drop", (e) => {
+      e.preventDefault();
+      const numberClass = e.dataTransfer.getData("text/plain");
+
+      face.classList.remove(
+        "face-one",
+        "face-two",
+        "face-three",
+        "face-four",
+        "face-five",
+        "face-six",
+      );
+
+      if (numberClass) {
+        face.classList.add(numberClass);
+      }
+
+      face.style.opacity = "1";
+    });
+  }
+}
+
+function makeColorDiceDraggable() {
+  const dices = document.querySelectorAll(".color-dice-container .dice");
+
+  for (const dice of dices) {
     dice.setAttribute("draggable", "true");
 
     dice.addEventListener("dragstart", (e) => {
-      // Get the color class (dice-red, dice-yellow, etc.)
       const colorClass = Array.from(dice.classList).find((cls) =>
         cls.startsWith("dice-"),
       );
@@ -24,13 +80,13 @@ function makeColorDiceDraggable() {
     dice.addEventListener("dragend", (e) => {
       dice.style.opacity = "1";
     });
-  });
+  }
 }
 
-function makeWhiteDiceAcceptDrops() {
-  const whiteDice = document.querySelectorAll(".card .dice");
+function makeBlankDiceAcceptDrops() {
+  const dices = document.querySelectorAll(".card .dice");
 
-  whiteDice.forEach((dice) => {
+  for (const dice of dices) {
     dice.addEventListener("dragover", (e) => {
       e.preventDefault();
       dice.style.opacity = "0.7";
@@ -58,5 +114,5 @@ function makeWhiteDiceAcceptDrops() {
 
       dice.style.opacity = "1";
     });
-  });
+  }
 }
