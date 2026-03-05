@@ -100,7 +100,6 @@ div {
 .face {
     width: 100%;
     height: 100%;
-    background: #aaaaaa;
     position: absolute;
     display: flex;
     align-items: center;
